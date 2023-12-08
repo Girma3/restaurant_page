@@ -1,3 +1,61 @@
-li{
-    color: brown;
+body{
+    
+   
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+   
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+   
+} 
+a{
+    color: rgb(1, 0, 0);
+    font-weight: 800;
+    font-size: 2rem;
+    transition: 10ms;
+    background-color: azure;
+    
+}
+a:hover{
+transform: translate(1);
+background-color:  yellow ;
+}
+
+
+ul :nth-child(3)>a{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-items{
+    font-size: 2rem;
+    color: white;
+}
+.header{
+    display: flex;
+    align-items: center;
+
+      background-image: url(./asset/eth-food.jpg);  
+    background-repeat: no-repeat;
+    background-position:inherit;
+    background-size: cover;
+   
 }
