@@ -7,26 +7,34 @@ import Genfo from './asset/genfo1.jpg'
 import  Doro from './asset/doro.jpg'
 import  Ketfo from './asset/special-kitfo-ethiopian.jpg'
 import Mesob from './asset/mesob.jpg'
-const wrapper = document.querySelector('#content');
+
+
+//wraps hold the menu
+const wraps = document.createElement('div');
+     wraps.classList.add('wraps');
+
+     //we append menu on the content later
+ const content = document.querySelector('#content');
+
 //put the menu info in the array  to create indivdual elemnt with img and price
 const menuDetail = [
 
     {
         foodName: "Firfir",
         foodImage: `${Firfir}`,
-        aboutTheFood : "Great for breakfast and made with injera,egg and spices",
+        aboutTheFood : "Great for breakfast and made with injera,egg and spices.",
         price : "3$"
     },
     {
         foodName: "Shiro",
         foodImage: `${Shiro}`,
-        aboutTheFood : "Check out our spicy shiro",
+        aboutTheFood : "Check out our spicy shiro.",
         price : "2$"
     },
     {
         foodName: "Shekla Tibs",
         foodImage: `${Tibs}`,
-        aboutTheFood : "Tasty and hot food for meat lovers the coal benetah it  even makes it hot 🔥 ",
+        aboutTheFood : "Tasty and hot food for meat lovers the coal beneath it  even makes it hot 🔥 ",
         price : "10$"  
     },
     {
@@ -51,22 +59,24 @@ const menuDetail = [
         foodName: "Ketfo",
         foodImage: `${Ketfo}`,
         aboutTheFood : "Minced meat with chesse,kocho(special bread) and spices.",
-        price : "2$"
+        price : "12$"
     },
     {
         foodName: "Agelgel",
         foodImage: `${Mesob}`,
         aboutTheFood : "Our combo good for someone who want to try for the first time.",
-        price : "2$"
+        price : "15$"
     }
 
 ]
 
  
-//function to create image oof the food on the left side and food info on the right side
+//function to create image of the food on the left side and food info on the right side
 //for the food info we use the objects that stored in the array.
-function menu(){
 
+
+function menu(){
+    
     menuDetail.map((food)=>{
 
     const holder = document.createElement('div');
@@ -103,17 +113,13 @@ function menu(){
     holder.appendChild(rightSide);
     holder.appendChild(aboutFood);
 
-    wrapper.style.display = "grid";
-    wrapper.style.gridTemplateColumns = "1fr 1fr"
-    wrapper.style.gridTemplateRows = "repeat(auto-fill, minmax(300px,1fr))";
-    wrapper.style.backgroundColor = "rgb(220 178 4)"
-    wrapper.appendChild(holder)
-})
-
+    wraps.style.display = "grid";
+    wraps.style.gridTemplateColumns = "repeat(auto-fill,minmax(400px,500px))"
+    wraps.style.backgroundColor = "rgb(220 178 4)"
+    wraps.appendChild(holder)
+    
+});
+content.appendChild(wraps)
 
 }
-
-
-
-
 export {menu}
