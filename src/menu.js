@@ -22,48 +22,56 @@ const menuDetail = [
     {
         foodName: "Firfir",
         foodImage: `${Firfir}`,
+        foodAlt :`${'injera and egg o plate'}`,
         aboutTheFood : "Great for breakfast and made with injera,egg and spices.",
         price : "3$"
     },
     {
         foodName: "Shiro",
         foodImage: `${Shiro}`,
+        foodAlt :`${'injera and sero wot'}`,
         aboutTheFood : "Check out our spicy shiro.",
         price : "2$"
     },
     {
         foodName: "Shekla Tibs",
         foodImage: `${Tibs}`,
+        foodAlt :`${'fried meat with the coal beneth it'}`,
         aboutTheFood : "Tasty and hot food for meat lovers the coal beneath it  even makes it hot 🔥 ",
         price : "10$"  
     },
     {
         foodName: "Beyaynet",
         foodImage: `${Beyaynt}`,
+        foodAlt :`${'diffrent vegeterian food on plate'}`,
         aboutTheFood : "Packed with delicious tests great choice for vegeterians.",
         price : "5$"
     },
     {
         foodName: "Genfo",
         foodImage: `${Genfo}`,
+        foodAlt :`${'genfo with spices'}`,
         aboutTheFood : "Great food for the special occasions  made from barley flour butter  and spices.",
         price : "8$"
     },
     {
         foodName: "Doro wot",
         foodImage: `${Doro}`,
+        foodAlt :`${'shicken stew with injera '}`,
         aboutTheFood : "Our main cousre made form chicken and special  choice for anyone want to taste Ethiopian food.",
         price : "15$"
     },
     {
         foodName: "Ketfo",
         foodImage: `${Ketfo}`,
+        foodAlt :`${'minced meat with cheese on plate'}`,
         aboutTheFood : "Minced meat with chesse,kocho(special bread) and spices.",
         price : "12$"
     },
     {
         foodName: "Agelgel",
         foodImage: `${Mesob}`,
+        foodAlt :`${'combo of our menu'}`,
         aboutTheFood : "Our combo good for someone who want to try for the first time.",
         price : "15$"
     }
@@ -87,6 +95,7 @@ function menu(){
     const img = document.createElement('img');
     img.classList.add('menu-img');
     img.src = `${food.foodImage}`
+    img.alt = `${food.foodAlt}`
     rightSide.appendChild(img)
 
 
