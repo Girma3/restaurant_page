@@ -1,4 +1,4 @@
-import { footer } from "./home";
+
 const content = document.querySelector('.content')
 //function to creat location mapp on left  side and openhours on the right side
 function contacts(){
