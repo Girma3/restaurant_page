@@ -1,5 +1,5 @@
-import { footer } from "./intro_page";
-const content = document.querySelector('#content')
+import { footer } from "./home";
+const content = document.querySelector('.content')
 //function to creat location mapp on left  side and openhours on the right side
 function contacts(){
     const section = document.createElement('div');
@@ -13,10 +13,10 @@ function contacts(){
     titleContact.textContent = "Find Us"
 
     const place = document.createElement('p')
-    place.textContent = "location: Addis Ababa,kotebe street"
+    place.textContent = "📍 Addis Ababa,meskel aquare"
 
     const phone = document.createElement('p');
-    phone.textContent = "+251 9 29 04  02 27";
+    phone.textContent = "☎️ +251 9 29 04  02 27";
 
     contact.appendChild(titleContact);
     contact.appendChild(phone);
@@ -25,7 +25,7 @@ function contacts(){
     const openHrs = document.createElement('div');
     openHrs.classList.add('open-time');
 
-    const titleHrs = document.createElement('h3');
+    const titleHrs = document.createElement('h2');
     titleHrs.textContent = "Open Hours";
 
     const openTime  = document.createElement('p');
@@ -33,7 +33,7 @@ function contacts(){
     openTime.textContent = `${'open 7 days a week'} 
         ${"11:30 AM - 9 PM OR UNTIL WE SELL OUT"}`
 
-    openHrs.appendChild(titleHrs);
+    contact.appendChild(titleHrs);
     openHrs.appendChild(openTime);
 
     const mapImg = document.createElement('div');
