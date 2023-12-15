@@ -37,18 +37,18 @@ body{
     font-weight: 400;
     src: url('/src/fonts/preahvihear-v29-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-#content{
+.content{
   
    width:100%; 
    height: 100%;
 }
 .intro-page{
     
-    width: 100%;
-    display: grid;
+     width: 100%;
+     display: grid;
      grid-template-rows: 6fr 1fr ; 
      height: 100%;
-    gap: 1rem;
+     gap: 1rem;
 }
 ul{
     list-style: none;
@@ -60,11 +60,13 @@ ul{
    
 } 
 a{
+    cursor: pointer;
     color: rgb(9, 2, 137);
     font-weight: 800;
     font-size: 2rem;
     background-color: rgb(255, 255, 255);  
     padding: 0.5rem;
+    border-radius: 0.5rem;
     
 }
 a:hover{
@@ -77,13 +79,13 @@ a:hover{
     font-family: 'Nova Square';
     font-size: 4rem;
     font-weight: 900;
-    color:rgb(83, 0, 0);
+    color:rgb(30, 0, 0);
     text-shadow: 1px 4px rgb(207, 196, 196);
     
 }
 
 .logo:hover{
-  color: rgb(30, 26, 1);
+  color: rgb(162, 0, 0);
   border-bottom: 4px solid rgb(0, 8, 255);
 }
 
@@ -129,39 +131,55 @@ h2{
     letter-spacing: 0.2rem;
     color: rgb(250, 250, 4);
 }
+
 .story{
     font-family: 'Preahvihear'; 
     text-align: center;
+    align-self: center;
+    color:white;
+    padding: 1rem;
+  }
   
-
-}
-/* 3rd section */
+/* 3rd section or contact page */
 .section-three{
    
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* gap:2rem; */
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    margin: auto;
+    padding: 3rem;
     
 }
 .open-time{
     background-color: rgb(253, 252, 254);
 }
 .contact{
+    padding: 1.5rem;
+    text-align: center;
     background-color: rgb(80, 67, 67);
 }
+.contact > p{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+.map-img{
+    background-color: aqua;
+    background-image: url(/src/asset/location.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 footer{
-    background-color: gray;
-    color: beige;
+     background-color: gray;
+    text-align: center;
+    
 }
 footer > p{
-    color: red;
+    font-size: 1.2rem;
+    font-family: 'Nova Square';
+    color: rgb(0, 34, 1);
 }
-/* menu page*/
-/* .menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
+
 .wraps{
     justify-content: space-evenly;
 }
@@ -199,6 +217,5 @@ footer > p{
 .about-food:hover{
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(245, 247, 247);
-  
-border-radius: 1rem;
+    border-radius: 1rem;
 }
