@@ -1,10 +1,12 @@
 import './style.css';
-import { firstPage } from './intro_page';
+import { firstPage } from './home';
 import {menu} from './menu'
-import { createHero } from './intro_page';
+import { createHero } from './home';
 import { contact } from './contact';
 
-const content = document.querySelector('#content')
+const content = document.querySelector('.content');
+
+
 //load intro page by default
 content.appendChild(createHero())
 firstPage()
