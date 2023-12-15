@@ -14,7 +14,7 @@ const wraps = document.createElement('div');
      wraps.classList.add('wraps');
 
      //we append menu on the content later
- const content = document.querySelector('#content');
+ const content = document.querySelector('.content');
 
 //put the menu info in the array  to create indivdual elemnt with img and price
 const menuDetail = [
